@@ -1,13 +1,10 @@
 package hub.andrusha.hw1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task2
 {
     public static double[] days = new double[30];
-    public static double[] expenses = new double[30];
-
     public static void main(String[] args)
     {
         Scanner scan = new Scanner(System.in);
@@ -52,10 +49,9 @@ public class Task2
                     break;
                 case 3:
                     double max = 0.0;
-                    for (int i = 0; i < days.length; i++)
-                    {
-                        if (days[i] > max){
-                            max = days[i];
+                    for (double day : days) {
+                        if (day > max) {
+                            max = day;
                         }
 
                     }
@@ -91,7 +87,7 @@ public class Task2
                 novalue = false;
             }
         }
-        if (novalue == true)
+        if (novalue)
         {
             System.out.println("Нет расходов!");
         }

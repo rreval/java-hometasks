@@ -2,7 +2,7 @@ package hub.andrusha.hw1;
 
 import java.util.Scanner;
 
-public class Task2
+public class FinancialCalculator
 {
     public static double[] days = new double[30];
     public static void main(String[] args)
